@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE tsung SYSTEM "/usr/share/tsung/tsung-1.0.dtd" [] >
+<tsung loglevel="warning">
+
+    <clients>
+        <client host="localhost" use_controller_vm="true" maxusers="30000000"/>
+    </clients>
+
+    <servers>
+        <server host="rbenitte.com" port="80" type="tcp"/>
+    </servers>
+
+    <load>
+        <arrivalphase phase="1" duration="1" unit="minute">
+            <users arrivalrate="5" unit="second"/>
+        </arrivalphase>
+    </load>
+
+    <sessions>
+        <session name="homepage" weight="1" type="ts_http">
+            <request>
+                <http url="/" method="GET" />
+            </request>
+            <request>
+                <http url="/test" method="GET" />
+            </request>
+            <request>
+                <http url="/2015/01/09/Mozaik/" method="GET" />
+            </request>
+        </session>
+    </sessions>
+</tsung>

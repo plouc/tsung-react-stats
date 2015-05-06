@@ -1,0 +1,25 @@
+
+=INFO REPORT==== 1-May-2015::11:53:30 ===
+    ts_config_server:(5:<0.50.0>) Config server started, logdir is "/Users/benitte/projects/tsung-gui/./20150501-1153"
+ 
+=INFO REPORT==== 1-May-2015::11:53:30 ===
+              ts_mon:(5:<0.49.0>) starting monitor, global 
+
+=INFO REPORT==== 1-May-2015::11:53:30 ===
+           ts_config:(5:<0.50.0>) Reading config file: plouc.xml
+
+=INFO REPORT==== 1-May-2015::11:53:30 ===
+           ts_config:(5:<0.50.0>) Session name for id 1 is "homepage"
+
+=INFO REPORT==== 1-May-2015::11:53:30 ===
+    ts_config_server:(4:<0.50.0>) SYSINFO:Tsung version: 1.5.1
+
+=INFO REPORT==== 1-May-2015::11:53:30 ===
+    ts_config_server:(4:<0.50.0>) SYSINFO:Erlang version: Erlang/OTP 17 [erts-6.4] [source] [64-bit] [smp:4:4] [async-threads:16] [hipe] [kernel-poll:true] [dtrace]
+
+
+=INFO REPORT==== 1-May-2015::11:53:30 ===
+    ts_config_server:(4:<0.50.0>) SYSINFO:System architecture x86_64-apple-darwin14.1.0
+
+=INFO REPORT==== 1-May-2015::11:53:30 ===
+    ts_config_server:(4:<0.50.0>) SYSINFO:Current path: /usr/local/Cellar/tsung/1.5.1/lib/erlang/lib/tsung-1.5.1/ebin/tsung.beam

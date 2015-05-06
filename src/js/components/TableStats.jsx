@@ -20,7 +20,7 @@ var TableStats = React.createClass({
     },
 
     render() {
-        var rows = this.state.stats.map(stat => <TableStatsRow stat={stat} />);
+        var rows = this.state.stats.map(stat => <TableStatsRow key={stat.timestamp} stat={stat} />);
 
         return (
             <table className="table">
@@ -41,17 +41,9 @@ var TableStats = React.createClass({
         );
     },
 
-    _onStatsUpdate(stats) {
-        stats = _.filter(stats, stat => (stat.samples.length > 0));
-        stats = _.map(stats, stat => {
-            return {
-                timestamp: stat.timestamp,
-                data:      _.indexBy(stat.samples, 'name')
-            };
-        });
-
+    _onStatsUpdate(data) {
         this.setState({
-            stats: stats
+            stats: data.stats
         });
     }
 });
